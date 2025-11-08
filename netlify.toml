@@ -1,0 +1,21 @@
+[build]
+  command = "echo 'No build needed for serverless functions'"
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# Scheduled function - runs daily at 9:00 AM UTC
+[[plugins]]
+  package = "@netlify/plugin-scheduled-functions"
+
+# Schedule: every day at 9:00 AM UTC
+# You can change this cron expression:
+# Format: minute hour day month day-of-week
+# Examples:
+#   "0 9 * * *"  = Daily at 9:00 AM UTC
+#   "0 */6 * * *" = Every 6 hours
+#   "*/15 * * * *" = Every 15 minutes (for testing)
+[[functions."send-notification".schedule]]
+  cron = "0 9 * * *"

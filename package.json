@@ -1,0 +1,22 @@
+{
+  "name": "wordpress-onesignal-netlify",
+  "version": "1.0.0",
+  "description": "Automated OneSignal push notifications for WordPress using Netlify Functions",
+  "main": "netlify/functions/send-notification.js",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "keywords": [
+    "netlify",
+    "functions",
+    "onesignal",
+    "wordpress",
+    "push-notifications"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@netlify/plugin-scheduled-functions": "^1.0.0"
+  }
+}
