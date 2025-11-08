@@ -17,5 +17,5 @@
 #   "0 9 * * *"  = Daily at 9:00 AM UTC
 #   "0 */6 * * *" = Every 6 hours
 #   "*/15 * * * *" = Every 15 minutes (for testing)
-[[functions."send-notification".schedule]]
+[functions."send-notification".schedule]
   cron = "0 9 * * *"
